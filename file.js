@@ -129,5 +129,20 @@ console.log(todoList);
 /*---To search for a specific value, arrays provide an indexOf method. The method searches through the array from the start to the end and returns the index at which the requested value was found
 //—or -1 if it wasn’t found. To search from the end instead of the start, there’s a similar method called lastIndexOf.*/
 console.log([1, 2, 3, 2, 1].indexOf(2));
+//1
+console.log("one two three".indexOf("ee"));
+//11
 
-console.log([1,2,3,2,1]).lastIndexOf(2);
+// console.log([1,2,3,2,1]).lastIndexOf(2);
+
+//**************************************Slice********************************** */
+
+//Another fundamental array method is slice, which takes start and end indices and returns an array that has only the elements between them.
+
+console.log([0,6,4,8].slice(1,3));
+
+function remove(array, index) {
+  return array.slice(0, index).concat(array.slice(index + 1));
+}
+console.log(remove(["a", "b", "c", "d", "e"], 2));
+// → ["a", "b", "d", "e"]
