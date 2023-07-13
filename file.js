@@ -155,7 +155,7 @@ console.log(remove(["a", "b", "c", "d", "e"], 2));
 console.log("  okay \n ".trim());
 //okay
 
-/***************************Rest parameters*********************** */
+/*******************************************Rest parameters*********************** */
 
 //---It can be useful for a function to accept any number of arguments
 
@@ -172,3 +172,14 @@ function max(...numbers)
 
 console.log("The maximum number is -->");
 console.log(max(4,1,9,-2));
+
+/*********************************range()************************************ */
+
+/******Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end. */
+
+console.log(range(1,10));
+//// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(range(5, 2, -1));
+// → [5, 4, 3, 2]
+console.log(sum(range(1, 10)));
+// → 55
