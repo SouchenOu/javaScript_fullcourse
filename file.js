@@ -146,3 +146,11 @@ function remove(array, index) {
 }
 console.log(remove(["a", "b", "c", "d", "e"], 2));
 // → ["a", "b", "d", "e"]
+
+/************************************Trim()************************** */
+
+/**The trim method removes whitespace (spaces, newlines, tabs, and similar characters) from the start and end of a string.**/
+
+
+console.log("  okay \n ".trim());
+//okay
