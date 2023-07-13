@@ -154,3 +154,21 @@ console.log(remove(["a", "b", "c", "d", "e"], 2));
 
 console.log("  okay \n ".trim());
 //okay
+
+/***************************Rest parameters*********************** */
+
+//---It can be useful for a function to accept any number of arguments
+
+function max(...numbers)
+{
+  let result = - Infinity;
+  for (let number of numbers)
+  {
+    if(number > result)
+      result = number;
+  }
+  return result;
+}
+
+console.log("The maximum number is -->");
+console.log(max(4,1,9,-2));
