@@ -177,9 +177,47 @@ console.log(max(4,1,9,-2));
 
 /******Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end. */
 
-console.log(range(1,10));
-//// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(range(5, 2, -1));
-// → [5, 4, 3, 2]
-console.log(sum(range(1, 10)));
-// → 55
+// console.log(range(1,10));
+// //// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(range(5, 2, -1));
+// // → [5, 4, 3, 2]
+// console.log(sum(range(1, 10)));
+// // → 55
+
+/***************************************Repeate function***************** */
+
+function repeat(n, action) {
+  for (let i = 0; i < n; i++) {
+    action(i);
+  }
+}
+let labels = [];
+repeat(5, i => {labels.push(`Unit ${ i + 1}`);});
+
+console.log(labels);
+
+/**************************************Higher order functions***************** */
+
+
+function greaterThan(n) {
+  return m => m > n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(`To test--> ${greaterThan10}`)
+console.log(greaterThan10(11));
+// → true
+
+
+/*****And we can have functions that change other functions. */
+function noisy(f) 
+{
+  return (...args) => {
+    console.log("calling with", args);
+    let result =f (...args);
+    console.log("called with", args, ", returned", result);
+    return result;
+  };
+}
+noisy(Math.min)(3, 2, 1);
+// → calling with [3, 2, 1]
+// → called with [3, 2, 1] , returned 1
