@@ -38,3 +38,34 @@ console.log("Hello %csouchen %cfrom 1337", "color: red; font-size: 40px","color:
 let name = "souchen";
 console.log("hello " + name);
 console.log(`hello ${name}`);
+
+var hello = "Hello";
+
+console.log(hello);
+
+hello.innerHtml = "option";
+console.log(hello);
+
+/***************************************Logical operator **********************/
+
+//---    !
+//---    && and
+//---     || Or
+
+//*****************************Condition ? if true : else************************ */
+
+let theGender = "Male";
+
+theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+// if(tehGender === "Male")
+// {
+//     console.log("Mr");
+// }else
+//     console.log("Mrs");
+
+
+//***** */ we can put a condition in a console.log()
+console.log("**Put a condition in a console**");
+console.log(`${theGender == "Male" ? "Mr" : "Mrs"}`);
+
+
