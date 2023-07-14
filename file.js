@@ -1,5 +1,15 @@
 
 
+/****************************Console Methods**************************** */
+
+//--log
+//--error
+//--table
+
+
+console.table(["Ossama", "Ahmed", "souchen"]);
+
+
 /***********************************OBJECT-->KEYS****************** **********/
 /*****To find out what properties an object has, you can use the Object.keys function. You give it an object, and it returns an array of strings—the object’s property names. */
 
@@ -195,6 +205,8 @@ let labels = [];
 repeat(5, i => {labels.push(`Unit ${ i + 1}`);});
 
 console.log(labels);
+
+
 
 /**************************************Higher order functions***************** */
 

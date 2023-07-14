@@ -15,3 +15,21 @@ window.onload = function()
 window.alert("hello souchen");
 document.write("hello from 1337 compus");
 console.log("hello js course");
+
+
+
+/****************************Console Methods**************************** */
+
+//--log
+//--error
+//--table
+
+
+console.table(["Ossama", "Ahmed", "souchen"]);
+
+
+//********************************Styling console************************** */
+
+
+
+console.log("Hello %csouchen %cfrom 1337", "color: red; font-size: 40px","color: blue; font-size:20px ");
