@@ -33,3 +33,8 @@ console.table(["Ossama", "Ahmed", "souchen"]);
 
 
 console.log("Hello %csouchen %cfrom 1337", "color: red; font-size: 40px","color: blue; font-size:20px ");
+
+/********************************What is ECMAScript************ES6************ */
+let name = "souchen";
+console.log("hello " + name);
+console.log(`hello ${name}`);
