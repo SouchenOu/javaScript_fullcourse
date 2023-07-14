@@ -69,3 +69,13 @@ console.log("**Put a condition in a console**");
 console.log(`${theGender == "Male" ? "Mr" : "Mrs"}`);
 
 
+/*********************************Logical OR || , Null undefined + Any Falsy value */
+
+
+let price = null;
+let test1 = undefined;
+let test2 = 0;
+
+console.log(`The price is ${price || 200}`);
+console.log(`the test1 value is ${test1 || 100}`);
+console.log(`The test2 value is ${test2 || 300}`);
