@@ -221,3 +221,56 @@ function noisy(f)
 noisy(Math.min)(3, 2, 1);
 // → calling with [3, 2, 1]
 // → called with [3, 2, 1] , returned 1
+
+
+/************************Filter************************* */
+console.log("Filter Test");
+const numbers = [1,2,3,4,5,6,7,8,9];
+console.log("*Test1*");
+const newNumbers = numbers.filter((el)=> el > 5);
+console.log(newNumbers);
+
+console.log("*test2*");
+const newNumbers2 = numbers.filter((el)=> el != 5);
+
+console.log(newNumbers2);
+
+
+console.log("*test3*");
+
+const names = [{name: "souchen", age : 30}, {name: "Ahmed", age : 52}, {name: "fati", age :30}];
+
+const newName = names.filter(({age}) => age > 30);
+
+console.log(newName);
+
+
+console.log("*test4*");
+var arr = [1,2,3,4,5,6,7,8,9];
+
+var myArr = arr.filter(function(element){return element > 4});
+console.log(myArr);
+
+
+console.log("Our function function Filter*****");
+
+function filter(array, handler)
+{
+  let arr = [];
+
+  for(element of array){
+    //for(let element = 0; element = array.size(); element++)
+
+    var addToArray = handler(element);
+    if(addToArray)
+    {
+      arr.push(element);
+    }
+  }
+  return arr;
+}
+var arr2 = [10,11,12,13,14,15,16];
+var myArr2 =  filter(arr2, function(element){return element > 14});
+console.log(myArr2);
+
+/******************************Map************************ */
