@@ -452,4 +452,46 @@ function calcule(...numbers)
 calcule(10,20,30,40,50,60,70);
 
 
+/**********************Anonymous function***************************** */
+
+
+let calculeLet = function (num1, num2)
+{
+    return num1 + num2;
+}
+console.log(calculeLet(10,20));
+
+
+document.getElementById("firstBTN").onclick = function()
+{
+    document.write("salue mon amie");
+}
+
+setTimeout(function(){console.log("Good job")}, 2000);
+/***************Function inside a function ******************* */
+console.log("Impliment a function inside another function");
+function sayMessage(fName, lName)
+{
+    let message = "Ich bin soukaina";
+
+    function concatMsg()
+    {
+        return `${message}, ${fName}, ${lName}`;
+    }
+
+    return concatMsg();
+
+}
+console.log(sayMessage("soukaina", "Ouchen"));
+
+/*************************************Objects******************** */
+console.log("object implement");
+
+let day1 = {
+    squirrel : false,
+    events: ["work", "touched tree", "pizza", "running"]
+};
+
+console.log(day1.squirrel);
+
 
