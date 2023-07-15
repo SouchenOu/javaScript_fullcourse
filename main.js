@@ -79,3 +79,50 @@ let test2 = 0;
 console.log(`The price is ${price || 200}`);
 console.log(`the test1 value is ${test1 || 100}`);
 console.log(`The test2 value is ${test2 || 300}`);
+
+
+
+/*************************************String methods******************************** */
+
+//----charAt()
+//--trim() will remove the spaces
+let theName = " souchen  ";
+console.log(theName.charAt(1));
+console.log(theName.length);
+console.log(theName.trim());
+
+
+//---indexOf(value [Mand], start [Opt] 0)
+//--lastIndexOf(value [Mand], start [opt] Length)
+//--slice(Start [Mand], End [Opt] not include End)
+//--Repeate(Times)[ES6]
+//--split(seperator[Opt], Limit[Opt])
+
+
+
+//------indexof : to search for the index of a character --> starting from the beginning
+//------LastIndexOf : to search for the index of a character --> starting from the End
+let a = "42 cumpus france";
+
+console.log("The position of 'c' using IndexOf");
+console.log(a.indexOf("c"));
+// from the index 8 we will search about the index of (france)
+console.log(a.indexOf("france", 8));
+
+console.log("the position of 'c' using lastIndexOf");
+console.log(a.lastIndexOf("c"));
+
+//---slice : to cut from a sentence
+
+console.log(a.slice(1)); // here cut from the character 1
+console.log(a.slice(2,5)); // here cut from character position 2 to character position 4
+
+
+//--------repeat()  -->repeat a sentence or a word number of time
+
+console.log(a.repeat(3));
+
+
+//------split ->  cut a sentence by using any indice
+
+console.log(a.split(" ")); // split by using space
