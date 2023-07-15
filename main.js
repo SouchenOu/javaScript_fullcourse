@@ -271,3 +271,25 @@ var arr=["10", 100, 200, 1000, 6, "60", "souchen"];
 
 console.log(arr.sort()); // sort our element from the smallest to the biggest
 console.log(arr.reverse()); // reverse all element sorting
+
+
+/*************************************Slicing and splicing array***************************** */
+/***
+ * slice(start[opt], End [Opt] Not Including End)
+ * --slice()=> All Array
+ * 
+ * ** */
+
+
+var arr2 = ["Allmagn", "maroc", "france", "china", "Portugal", "Canada"];
+
+console.log(arr2.slice()); // give all the element in the array
+console.log(arr2.slice(1));// give me the element of the array from the position 1
+console.log(arr2.slice(1,3)); //from the position one give me two element (it will print --> "Allmagn", "maroc", "france")
+console.log(arr2.slice(-3));// starting count from the End so the element number -3 is china so will print from 'china' to the end'
+
+arr2.splice(0,0, "uk", "US"); // from index 0 delete 0 element and put in first position 'UK' and 'US'
+console.log(`Test one for splice--> ${arr2}`);
+arr2.splice(1, 1, "tamazirt", "America");// from the index 1 delete element that his index is 1 and add this two element 'tamazirt' and 'America'
+console.log(`Test two for splice--> ${arr2}`);
+
