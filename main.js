@@ -200,3 +200,45 @@ console.log(`The price is--> ${test ?? 300}`);
     default:
         console.log("Nothing");
  }
+
+ //************************************Arrays*********************** */
+ let myFriends = ["soukaina", "fati", "salma"];
+ let books = ["test1", "test2", ["test3","test4"]];
+
+ console.log(`Hello ${myFriends[0]}`);
+ console.log(`Hello ${myFriends[1]}`);
+ console.log(`Hello ${myFriends[1][3]}`);
+ console.log(`Our book name --> ${books[2][0]}`);
+
+ books[1] = "Harry potter"; // we can change the value of an element in array
+
+ console.log(`My favorite book is--> ${books[1]}`);
+
+ console.log(`The length of my array is--> ${books.length}`);
+
+ /* Arrays methods [Adding and removing]
+
+ ---unshift("","" Add Element to the first)
+ ---Push("","") Add Element to the End
+ ---shift() Remove first element from array
+ ---Pop() Remove Last element from array
+
+ */
+
+ // unshift
+
+ var tab = ["13","37","42","24"];
+
+ tab.unshift("11","12","13"); // Add this element to the first of my array--> [11,12,13,13,37,42,24]
+
+ console.log(tab);
+
+ tab.push("30","40"); // push this element to the end of my array
+
+ tab.shift();
+console.log("our array after impliment shift");
+console.log(tab);
+tab.pop();
+console.log("our array after impliment pop");
+console.log(tab);
+
