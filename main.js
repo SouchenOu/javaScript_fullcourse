@@ -264,3 +264,10 @@ console.log(myArray.includes("A2")); // if a A2 exist in my array return true si
 console.log(myArray.includes("A3", 1));// if from the position 1 element A3 exist return true sinon return false
 
 
+/*******************************Sorting array*********************************** */
+
+
+var arr=["10", 100, 200, 1000, 6, "60", "souchen"];
+
+console.log(arr.sort()); // sort our element from the smallest to the biggest
+console.log(arr.reverse()); // reverse all element sorting
