@@ -201,7 +201,7 @@ console.log(`The price is--> ${test ?? 300}`);
         console.log("Nothing");
  }
 
- //************************************Arrays*********************** */
+ //************************************Arrays************************************** */
  let myFriends = ["soukaina", "fati", "salma"];
  let books = ["test1", "test2", ["test3","test4"]];
 
@@ -227,18 +227,40 @@ console.log(`The price is--> ${test ?? 300}`);
 
  // unshift
 
- var tab = ["13","37","42","24"];
+var tab = ["13","37","42","24"];
 
- tab.unshift("11","12","13"); // Add this element to the first of my array--> [11,12,13,13,37,42,24]
+tab.unshift("11","12","13"); // Add this element to the first of my array--> [11,12,13,13,37,42,24]
 
- console.log(tab);
+console.log(tab);
 
- tab.push("30","40"); // push this element to the end of my array
+tab.push("30","40"); // push this element to the end of my array
 
- tab.shift();
+tab.shift();
 console.log("our array after impliment shift");
 console.log(tab);
 tab.pop();
 console.log("our array after impliment pop");
 console.log(tab);
+
+/************************************Search in array************************************** */
+/*****
+ * Arrays Mrthod[Search]
+ * indexof(Search Element, From Index[Opt])
+ * lastIndexOf(search Element, From index[Opt])
+ * includes(valueToFind, fromIndex[Opt])
+ * 
+ * 
+ */
+
+
+let myArray = ["A1", "A2", "A2", "A3"];
+
+console.log(myArray.indexOf("A2")); // search for the position of element 'A2' in myArray
+console.log(myArray.indexOf("A3", 3));// from the position 3 search for element A3
+
+console.log(myArray.lastIndexOf("A2"));// search for element A2 from the end of our array
+
+console.log(myArray.includes("A2")); // if a A2 exist in my array return true sinon return false
+console.log(myArray.includes("A3", 1));// if from the position 1 element A3 exist return true sinon return false
+
 
