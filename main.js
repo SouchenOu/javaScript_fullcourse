@@ -494,4 +494,13 @@ let day1 = {
 
 console.log(day1.squirrel);
 
+//*************Arrow function************************* */
+let printTest1 = () =>
+{
+    return 1;
+}
+
+let printTest2 = () => 2;
+
+let printTest3 = (num1, num2) => num1 + num2; 
 
