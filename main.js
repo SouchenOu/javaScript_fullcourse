@@ -293,3 +293,35 @@ console.log(`Test one for splice--> ${arr2}`);
 arr2.splice(1, 1, "tamazirt", "America");// from the index 1 delete element that his index is 1 and add this two element 'tamazirt' and 'America'
 console.log(`Test two for splice--> ${arr2}`);
 
+/****************************************Joining Arrays***************************************** */
+
+/***** Arrays Method[Joining]
+ * concat(array, array)==> return new array
+ * join(Seperator)
+ */
+
+let list1= ["T1", "T2", "T3", "T4"];
+let list2= ["Y1","Y2","Y3", "Y4"];
+let list3=["U1","U2","U3","U4"];
+
+let allList = list1.concat(list2);
+
+console.log(`Our allList is--> ${allList}`);
+
+// we can cancat 3 arrays in the same time
+
+let allthreeList = list1.concat(list2,list3);
+
+console.log(`Our three lists --> ${allthreeList}`);
+
+// we can concat more than 3 elements in the same time
+
+let elements = list1.concat(list2, list3, ["mam", "dad"], "souchen");
+
+console.log(`concat more that three elements-> ${elements}`);
+
+
+console.log(`join function result-> ${elements.join()}`); // will seperate all element of my array with ','
+console.log(`join function result-> ${elements.join("")}`) // will print the elements array without any seperator
+console.log(`join function result-> ${elements.join(" $ ")}`); //will seperate elements with '$'
+
