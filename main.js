@@ -383,7 +383,33 @@ for(let i = 0; i < pro1.length; i++)
 
 
 
-/***************Functions ************ */
+/*************************************Functions *********************** */
+
+//-- what is Functions?
+//-- User-undefined vs Built iN
+//--Syntax + Basic Usage
+//--Example From Real Life
+//--Parameter + Argument
+//--Practical Example
+
+
+//syntax1
+function sayHello()
+{
+    console.log(`Hello friends`);
+}
+//syntax2
+const saySalut = function()
+{
+    console.log("Salut mon amie");
+}
+//Syntax3
+
+const SayHallo = () =>{
+    console.log("Hallo Hallo");
+}
+
+
 
 console.log("****");
 const hummus = function(factor) {
@@ -410,8 +436,20 @@ const check1 = (y) => {
     return y * 2;
 }
 
-
 const check2 = y => y * 3;
+/********************Rest parameters***************** */
+
+function calcule(...numbers)
+{
+    let result = 0;
+    for(let i = 0; i < numbers.length; i++)
+    {
+        result += numbers[i];
+    }
+    console.log(`The sum is -> ${result}`);
+}
+
+calcule(10,20,30,40,50,60,70);
 
 
 
