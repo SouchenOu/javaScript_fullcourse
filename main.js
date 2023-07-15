@@ -355,3 +355,63 @@ for(; i < produit.length; i++)
 {
     console.log(produit[i]);
 }
+
+/**********************************Add products to page***************************** */
+
+
+let pro1 = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"];
+
+let col = ["red", "Green", "Blue"];
+
+let showCount = 5;
+document.write(`<h1> show ${showCount} product</h1>`);
+
+for(let i = 0; i < pro1.length; i++)
+{
+    document.write(`<div>`);
+    document.write(`<h3> [${i + 1}]${pro1[i]}</h3>`);
+   
+
+    for(let j = 0; j < col.length; j++)
+    {
+        document.write(`<p>${col[j]}</p>`);
+    }
+    document.write(`<p>${col.join(" | ")}</p>`);
+    document.write(`</div>`);
+
+}
+
+
+
+/***************Functions ************ */
+
+console.log("****");
+const hummus = function(factor) {
+    const ingredient = function(amount, unit, name) {
+      let ingredientAmount = amount * factor;
+      if (ingredientAmount > 1) {
+        unit += "s";
+      }
+      console.log(`${ingredientAmount} ${unit} ${name}`);
+};
+    ingredient(1, "can", "chickpeas");
+    ingredient(0.25, "cup", "tahini");
+    ingredient(0.25, "cup", "lemon juice");
+    ingredient(1, "clove", "garlic");
+    ingredient(2, "tablespoon", "olive oil");
+    ingredient(0.5, "teaspoon", "cumin");
+};
+
+hummus(123);
+
+/******************************************** */
+
+const check1 = (y) => { 
+    return y * 2;
+}
+
+
+const check2 = y => y * 3;
+
+
+
