@@ -161,8 +161,42 @@ console.log("impliment function endsWith with two parameter-->");
 console.log(variable.endsWith("e", 6)); // if our sentence from character 0 to character 6, ends with 'e' return true sinon return false
 
 
-/***********************************Nullish Coalescing operator ??***************** ************/
+/***********************************Nullish Coalescing operator ??  ***************** ************/
 
 var test = undefined;
 console.log(`The price is--> ${test ?? 300}`);
 
+/******************************************Switch statement**************** */
+
+/**
+ * Switch(expression)
+ * {
+ *          case1:
+ *              code Block
+ *              break;
+ *          case2:
+ *              code Block
+ *              Break;
+ *           default:
+ *              code Block
+ *} 
+ *
+ *      --Default Ordering
+ *      --Multiple Match
+ * 
+ * 
+ */
+
+ let day = 0;
+
+ switch(day)
+ {
+    case 0:
+        console.log("Monday");
+        break;
+    case 1:
+        console.log("thursday");
+        break;
+    default:
+        console.log("Nothing");
+ }
