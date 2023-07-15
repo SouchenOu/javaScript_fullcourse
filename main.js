@@ -518,5 +518,39 @@ if(10 ===10)
 
 console.log(`Our x here is--> ${x}`);
 
-/**************************************** */
+/*********************Higher order Function - MAP******************* */
 
+
+/**** Higher order functions 
+ * is a function that accepts functions as parameters and/or returns a function
+ * 
+ * 
+ * 
+ * --------Map:
+ * ----method created a new array
+ * populated with the results of calling a provided function on every element
+ * In the calling array
+ * 
+ * Syntax:   map(callBackFunction(Element, Index, Array) {}, thisArg)
+ * -Element => The current element being processed in the array
+ * -Index => The index of the current element being processed in the array
+ * -Array => The current array
+ * 
+ */
+
+let myNums = [10,20,30,40,50,60,70,80,90];
+let newArray = [];
+
+for(let i = 0; i < myNums.length ; i++)
+{
+    newArray.push(myNums[i] * 2);
+}
+
+// we will implement this using map
+
+let test = myNums.map(function(element, Index, array){ return element + element;}, 10);
+console.log("After using map***");
+console.log(myNums);
+
+
+//6:51:28
