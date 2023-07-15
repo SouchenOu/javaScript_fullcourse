@@ -325,3 +325,33 @@ console.log(`join function result-> ${elements.join()}`); // will seperate all e
 console.log(`join function result-> ${elements.join("")}`) // will print the elements array without any seperator
 console.log(`join function result-> ${elements.join(" $ ")}`); //will seperate elements with '$'
 
+/***************************************Loop for********************************** */
+/******mainLoop and nestedLoop */
+
+let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+let colors = ["Red", "Green", "Black"];
+
+mainLoop: for(let i = 0; i < products.length; i++)
+{
+    console.log(products[i]);
+    nestedLoop: for(let j = 0; j < colors.length; j++)
+    {
+        console.log(`- ${colors[j]}`);
+        if(colors[j] === "Green"){
+            break mainLoop;
+        }
+    }
+}
+
+
+/***************************Advanced implimentation for Loop***************** */
+
+let produit = ["Pad", "Monitor", "Iphone"];
+
+let i = 0;
+
+for(; i < produit.length; i++)
+{
+    console.log(produit[i]);
+}
