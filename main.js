@@ -161,3 +161,8 @@ console.log("impliment function endsWith with two parameter-->");
 console.log(variable.endsWith("e", 6)); // if our sentence from character 0 to character 6, ends with 'e' return true sinon return false
 
 
+/***********************************Nullish Coalescing operator ??***************** ************/
+
+var test = undefined;
+console.log(`The price is--> ${test ?? 300}`);
+
