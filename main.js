@@ -504,3 +504,19 @@ let printTest2 = () => 2;
 
 let printTest3 = (num1, num2) => num1 + num2; 
 
+/*************************Block scope************************* */
+
+//but when we declare  a 'x' variable with var in inside and outside  of the condition we will have a problem of duplicated variable
+
+
+var x = 10;
+if(10 ===10)
+{
+    let x = 50;
+    console.log(`our x here is-> ${x}`);
+}
+
+console.log(`Our x here is--> ${x}`);
+
+/**************************************** */
+
