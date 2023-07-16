@@ -695,3 +695,61 @@ let filterTest5 = twoTests.filter(function(element){
 })
 console.log("About filter");
 console.log(filterTest5);
+
+/********************Reduce method******************* */
+
+//method execute a reducer function on each  element of the array
+//resulting in a single output value
+
+
+// syntax : reduce(callBackFunc(Accumulator, current_value, current_index, Source_array{ }, initialValue))
+//--Accumulator : the accumulator value previously returned in the last invocation
+//--Current val: The current element being processed in the array
+//--Index : The index of the current element being processed in the array
+//--------------Starts from index 0 if an initialValue is provided 
+//--------------otherwise, it starts from index 1
+//-Array => The current Array
+
+
+console.log("Tesing reduce function");
+let reduceTest1 = [12, 13, 14, 15];
+
+let add = reduceTest1.reduce(function(accu, current, index, src){
+    console.log(`accu is-> ${accu}`);
+    console.log(`current is-->${current}`);
+    console.log(`index is --> ${index}`);
+    console.log(`src is--> ${src}`);
+    return accu + current;
+}, 5);
+// 5 here in the initial value we will be start with (it will be accu valut)
+/* so the result is 
+5 + 12
+17 + 13
+30 + 14
+44 + 15
+THE final result is 54
+*/
+
+console.log("Practise reduce");
+
+console.log("Practice 1");
+
+let theBiggest = ["Bla", "Propaganda", "Other", "abc", "Battery", "Test"];
+let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R"];
+
+let reduceTest3 = theBiggest.reduce(function(accu, current){
+    return (accu.length > current.length) ? accu : current;
+})
+
+console.log(`The biggest element is-> ${reduceTest3}`);
+
+console.log("Practise 2");
+
+let reduceTest4 = removeChars.filter(function(element){
+    return !element.startsWith("@");
+}).reduce(function(accu, current){
+    return `${accu} ${current}`;
+})
+console.log(reduceTest4);
+
+
