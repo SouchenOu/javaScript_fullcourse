@@ -801,6 +801,26 @@ let forAchTest3 = liElement.forEach(function(element){
 })
    
 
+/******************Higher order function challenge ******************/
+
+let string1 = "1, 2,3,EE, l, z, e, r, O, _ , W, e, b, -, S, c, h, o, o, l, 2, 0 ,z";
+
+let solution = '????';
+
+console.log(solution);
 
 
+console.log("Exercice about map, filter, reduce, forEach ");
+let result = string1.split("").map(function(element){
+    return element === element.toUpperCase() ? element.toLowerCase() : element;
 
+}).filter(function(element){
+    return element.startsWith("e") || element.startsWith("l") || element.startsWith("z") || element.startsWith("e") || element.startsWith("r") || element.startsWith("o") || element.startsWith("w") || element.startsWith("s") || element.startsWith("b") || element.startsWith("e") || element.startsWith("r") || element.startsWith("o") || element.startsWith("w") || element.startsWith("s") || element.startsWith("c") || element.startsWith("e") || element.startsWith("r") || element.startsWith("o") || element.startsWith("w") || element.startsWith("s") || element.startsWith("h") || element.startsWith("e") || element.startsWith("r") || element.startsWith("o") || element.startsWith("w") || element.startsWith("s") || element.startsWith("o") || element.startsWith("e") || element.startsWith("r") || element.startsWith("o") || element.startsWith("w") || element.startsWith("s") || element.startsWith("l") ;
+    
+    
+}).reduce(function(accu, current){
+    console.log(`accu--> ${accu}`);
+    //(accu !== current) ? console.log(accu) : console.log("");
+})
+
+console.log(`The result is ${result}`);
