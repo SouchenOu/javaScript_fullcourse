@@ -637,11 +637,61 @@ console.log(NotNb);
 
 
 
+/**************************************Filter******************** */
+
+let Myfriends = ["soukaina", "basma", "kawtar","arwa", "meriem", "khawla", "Ahmed"];
+let numbers = [10, 20, 100, 400];
+
+// Test Map vs Filter
+console.log("Map vs filter Test1********");
+console.log("Using Map test1*****");
+let filterTest1 = numbers.map(function(element){
+    return element + element;
+});
+
+console.log(filterTest1);
 
 
+console.log("Using filter test2****");
+let filterTest2 = Myfriends.filter(function(element){
+    return element.startsWith("A");
+});
+
+console.log(filterTest2);
+
+// filter : filtrer les element , so here it will note return true or false but it will filter impaire element and return just paire element
+// that is the difference between map and filter --> map return true or false but filter it will filter wrong element
+console.log("Using filter test3****");
+let filterTest3 = numbers.filter(function(element){
+    return element % 2 === 0 ? true : false;
+
+})
+
+console.log(filterTest3);
 
 
+console.log("Using filter test4");
+let mot = ["code", "Hallo", "Salut", "abs", "bz"];
+let mots = "code Hallo Salut abs bz";
+let filtertest4 = mot.filter(function(element){
+    return element.length <= 4;
+})
 
+console.log(filtertest4);
 
+// This example show the difference between map and filter
 
+console.log("To show the difference between map and filter");
+let twoTests = ["10", "check1", 20, "hallo"];
 
+let mapTest5 = twoTests.map(function(element){
+    return isNaN(parseInt(element));
+})
+console.log("About map");
+console.log(mapTest5);
+
+let filterTest5 = twoTests.filter(function(element){
+    return isNaN(parseInt(element)); 
+})
+console.log("About filter");
+console.log(filterTest5);
