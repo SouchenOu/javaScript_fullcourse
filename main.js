@@ -824,3 +824,41 @@ let result = string1.split("").map(function(element){
 })
 
 console.log(`The result is ${result}`);
+
+
+/****************************Object**************************** */
+
+/*****
+ * 
+ * 
+ * Intro and what is object
+ * Testing window object
+ * Accessing object
+ */
+
+console.log("*************Object practising***********");
+
+
+let object1 = {
+    //Proprties
+    theName: "souchen",
+    theAge: 24,
+    //Methods
+    sayHello: function()
+    {
+        console.log(`hello  souchen`);
+    }
+
+}
+
+console.log(object1.theName);
+console.log(object1.theAge);
+console.log(object1.sayHello());
+
+const theUser = {
+    theName : "soukaina ouchen",
+    "country of" : "Maroc",
+};
+
+console.log(theUser.theName);
+console.log(theUser["country of"]);
