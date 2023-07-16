@@ -518,6 +518,22 @@ if(10 ===10)
 
 console.log(`Our x here is--> ${x}`);
 
+/********************************* */
+/****************Scope  Lexical scope **************/
+
+function parent()
+{
+    let x = 10;
+
+    function shild()
+    {
+        console.log(`The x is ${x}`);
+    }
+    shild();
+}
+
+parent();
+
 /*********************Higher order Function - MAP******************* */
 
 
@@ -547,10 +563,38 @@ for(let i = 0; i < myNums.length ; i++)
 }
 
 // we will implement this using map
+// Method 1
 
-let test = myNums.map(function(element, Index, array){ return element + element;}, 10);
+console.log("Test1**************");
+let mapTest1 = myNums.map(function(element, Index, array){
+     return element + element;
+    //  console.log(`Current element ${element}`);
+    //  console.log(`Current index ${Index}`);
+    //  console.log(`Current array ${array}`);
+    
+    }, 10);
 console.log("After using map***");
-console.log(myNums);
+console.log(mapTest1);
+
+// Method 2*
+console.log("Test2******");
+let mapTest2 = myNums.map((element) => element + element);
+console.log(mapTest2);
 
 
-//6:51:28
+
+//example
+
+console.log("Test3********");
+
+function ADD(element)
+{
+    element + element; 
+}
+
+let mapTest3 = myNums.map(ADD);
+
+console.log(mapTest3);
+
+
+/***************Map Practise********************** */
