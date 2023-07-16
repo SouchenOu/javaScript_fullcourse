@@ -752,4 +752,55 @@ let reduceTest4 = removeChars.filter(function(element){
 })
 console.log(reduceTest4);
 
+/****************************ForEach********************** */
+
+//---- Method executes a provided  function once for each arrayElement
+
+/*syntax forEach(callBackFunction(Element, Index, Array){}, thisArg)
+---Element=> The current element bieng processed in the array
+---Index=> The index of the current element being  processed in the array
+---Array=> The current Array
+
+Note:
+---Doesnt return Anything
+---Break will not  Break the Loop
+
+*/
+
+
+let liElement = document.querySelectorAll("ul li");
+console.log(liElement);
+
+
+// let forAchTest1 = liElement.forEach(function(element){
+//     element.onclick = function(){
+//         console.log(this);
+//     };
+// });
+
+
+let forAchTest2 = liElement.forEach(function(element){
+            element.onclick = function(){
+                element.classList.add("active");
+                console.log(this);
+            };
+});
+
+let divsAll = document.querySelectorAll(".content");
+let forAchTest3 = liElement.forEach(function(element){
+    element.onclick = function(){
+        element.classList.remove("active");
+        console.log(this);
+
+        divsAll.forEach(function(element){
+            element.style.display = "none";
+        })
+
+
+    }
+})
+   
+
+
+
 
