@@ -598,3 +598,50 @@ console.log(mapTest3);
 
 
 /***************Map Practise********************** */
+
+console.log("Exercice1-->  UpperCase to LowerCase and vise versa ");
+
+let tabTest1 =  [1, -10, -200, 20];
+let SwappingElzero = "SoUcHeNFROM1337";
+let ignoreBoolean = "Elz123ero";
+
+let sw = SwappingElzero.split("").map(function(element, Index, array){
+    return (element === element.toUpperCase()) ? element.toLowerCase() : element.toUpperCase();
+});
+console.log(`Map testing--> ${sw}`);
+
+
+console.log("Exercice2-->  nigative to positive and vise versa");
+
+let env = tabTest1.map(function (element, Index, Array){
+    return -element;
+})
+
+console.log(env);
+
+
+console.log("Exercice3--> IS not a number");
+
+let NotNB = ignoreBoolean.split("").map(function(element, Index, Array){
+    return  isNaN(parseInt(element)) ? element : "";
+})
+
+console.log(NotNB);
+
+// Arrow function version
+console.log("Arrow function");
+
+
+let NotNb = ignoreBoolean.split("").map((element)=> (isNaN(parseInt(element)) ? element : ""))
+console.log(NotNb);
+
+
+
+
+
+
+
+
+
+
+
