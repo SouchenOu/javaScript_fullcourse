@@ -862,3 +862,45 @@ const theUser = {
 
 console.log(theUser.theName);
 console.log(theUser["country of"]);
+
+
+/********Nested Object and advanced examples************** */
+
+let user1 = {
+    name: "soukaina",
+    age: 24,
+    skils: ["Html", "css", "Js"],
+    available: false,
+    address: {
+        Location:"al yassmina",
+        // Thid is the nested object
+        place: {
+            one: "Agadir",
+            two: "khouribga",
+        },
+    },
+
+    checkAvailable : function()
+    {
+        if(user1.available === true)
+        {
+            return `Free for work`;
+        }
+        return `Not free for work`;
+    }
+}
+
+
+console.log("The address is-->");
+console.log("Using method 1");
+console.log(user1.address.Location);
+console.log("Using method 2");
+console.log(user1["address"]["Location"]);
+
+
+console.log("Check available");
+console.log(user1.checkAvailable());
+
+
+console.log("His Skilles is-->");
+console.log(user1.skils.join("|"));
