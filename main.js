@@ -1034,7 +1034,7 @@ console.log(finalObject2);
 /*******DOM
  * What is DOM?
  * DOM Selector
- * Find element byy Id
+ * Find element by Id
  * Find element by Tag Name
  * Find element By class Name
  * Find element by css selector
@@ -1047,14 +1047,15 @@ console.log(finalObject2);
 
 let myIdElement = document.getElementById("my-div");
 let myTagElements = document.getElementsByTagName("p");
-let myClassElements = document.getElementsByClassName("my-apan");
+let myClassElements = document.getElementsByClassName("my-span");
 /***
  * // we add '#' to id
 // we add '.' to class
  */
+// we can use querySelector to call any element you want--> (id, class, name element)
 let MyQuerySelector = document.querySelector("#my-div"); 
 let MyQuerySelector2 = document.querySelector(".my-span");
-let MyQuerySelector3 = document.querySelectorAll(".my-span"); // to focus of all spans element
+let MyQuerySelector3 = document.querySelectorAll(".my-span"); // to focus of all spans classes element
 console.log(myIdElement);
 console.log(myTagElements[1]);
 
@@ -1072,3 +1073,68 @@ console.log(`Title is-> ${document.title}`);
 console.log(`body is--> ${document.body}`);
 console.log(`forms is--> ${document.forms[0].one.value}` );
 console.log(document.links[1].href);
+
+/*****************Get, set elements content attributes***************** */
+
+
+/*********
+ * DOM [Get / Set Elements Content And Attributes]
+ * innerHTML
+ * textContent
+ * Change Attribute Directly
+ * Change Attribute With Methods
+ * ----GetAttribute
+ * ----SetAttribute
+ */
+
+console.log("Begin setters and getters");
+let Element1 = document.querySelector(".js");
+
+console.log(Element1.innerHTML); // the contenue with HTML element
+console.log(Element1.textContent); // the contenue (just txt without HTML element)
+
+Element1.innerHTML = "Text From <span> Main.js </span> File";
+Element1.textContent = "Text From <span> text.js </span> File";
+console.log(Element1.innerHTML);
+
+
+// Images
+
+    document.images[0].src = "https://images8.alphacoders.com/738/738473.jpg";
+    document.images[0].alt = "Alternate";
+    document.images[0].title = "Picture";
+    document.images[0].id = "Pic";
+    document.images[0].className = "img";
+
+
+    // getAttribute
+console.log("Using getAttribute");
+    let MyLink = document.querySelector(".link");
+
+    console.log(MyLink.getAttribute("class"));
+    console.log(MyLink.getAttribute("href"));
+    //setAttribute
+
+   MyLink.setAttribute("href", "https://twitter.com");
+
+
+   /*************************Check attribute and examples*************** */
+
+   /****
+    * DOM [Check Attributes]
+    * Element.Attributes
+    * Element.hasAttribute
+    * element.hasAttributes
+    * Element.removeAttribute
+    */
+
+
+   console.log(document.getElementsByTagName("p")[0].attributes);
+
+   let myP = document.getElementsByTagName("p")[0];
+
+   if(myP.hasAttribute("data-src"))
+   {
+    console.log("Found");
+   }else
+    console.log("Not found");
