@@ -940,3 +940,36 @@ let user4 = new Object({
     age : "62",
     country: "Espagne"
 })
+
+/**************************Function This keyword**************** */
+
+
+/*******
+ * This introduction
+ * This inside Object Method
+ * ----When a function is called as a method of an object, it's this is set to the object
+ * the method is called on
+ * 
+ * 
+ * 
+ * Global Object:
+ * --Test Variable with window and this
+ * Global Context
+ * Function Context
+ * 
+ */
+
+document.getElementById("secondBtn").onclick = function(){
+    console.log(this); // will console the btn --> <button></button>
+}
+
+let user3 = {
+    age: 50,
+    ageInDays : function()
+    {
+        this.age = 20; // this set to the object <==> user3.age
+        console.log(this.age);
+    }
+}
+
+
