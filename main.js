@@ -1244,3 +1244,19 @@ Mybtn.onclick = function()
 {
     console.log("clicked");
 }
+
+
+/**********************Validate Form and prevent Default***************** */
+
+
+/*******
+ * DOM[events]
+ * Validate Form Practise
+ * Prevent Default  : to stop when you click a link of something to go to the link
+ * 
+ * 
+ */
+
+document.links[0].onmouseenter = function() {
+    console.log("Hello event");
+}
