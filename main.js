@@ -963,7 +963,7 @@ document.getElementById("secondBtn").onclick = function(){
     console.log(this); // will console the btn --> <button></button>
 }
 
-let user3 = {
+let user5 = {
     age: 50,
     ageInDays : function()
     {
@@ -972,4 +972,28 @@ let user3 = {
     }
 }
 
+//***********************Create Object with create() Method*************** */
 
+
+let obj = Object.create({}); // we create an object named obj but it is empty
+
+obj.a = 100;
+obj.b = "ouchen soukaina";
+
+//Copy an object on a another object
+
+let copyObject = Object.create(obj);
+console.log("Method 1");
+console.log("a value->");
+console.log(copyObject.a);
+console.log("b value-->");
+console.log(copyObject.b);
+
+let copyObject2 = Object.create({});
+copyObject2 = obj;
+
+console.log("Method 2");
+console.log("a value->");
+console.log(copyObject.a);
+console.log("b value-->");
+console.log(copyObject.b);
