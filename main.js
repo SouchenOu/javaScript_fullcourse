@@ -1138,3 +1138,38 @@ console.log("Using getAttribute");
     console.log("Found");
    }else
     console.log("Not found");
+
+
+    /**********************Create and append Elements*********** */
+
+    /******
+     * DOM [Create Elements]
+     * createElement
+     * createComment
+     * CreateTextNode
+     * createAttribute
+     * appendchild
+     * 
+     * 
+     */
+
+    /***reate all HTML element by using js */
+
+
+    let Element2 = document.createElement("div");
+    let Element3 = document.querySelector("div");
+    let myAttr = document.createAttribute("data-custom");
+    Element3.setAttribute("data-custom", "Hello");
+    Element3.className = "div1";
+
+    console.log(Element3);
+
+   
+    // To put a comment
+    let myComment = document.createComment("This is Div");
+     Element3.appendChild(myComment);
+      // To put all of this inside the body element
+     document.body.appendChild(Element3);
+
+
+
