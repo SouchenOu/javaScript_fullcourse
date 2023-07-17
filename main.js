@@ -904,3 +904,39 @@ console.log(user1.checkAvailable());
 
 console.log("His Skilles is-->");
 console.log(user1.skils.join("|"));
+
+/***********************Create object with new keyword************************* */
+
+
+/******
+ * Create with new keyword new Object()
+ * 
+ */
+
+
+let user2 = {
+    age : 20,
+};
+
+console.log("The information about user");
+console.log(user2);
+
+user2.age = 30;
+console.log("We changed the age");
+console.log(user2);
+
+user2["Country"] = "Maroc";
+user2.SayHello = function() {
+    console.log("Hello souchen");
+}
+
+
+let user3 = new Object();
+
+user3.name = "Ahmed";
+user3.age = 26;
+let user4 = new Object({
+    name : "Salwa",
+    age : "62",
+    country: "Espagne"
+})
