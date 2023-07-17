@@ -1028,3 +1028,47 @@ console.log(finalObject); // in finalObject we find obj1 and obj2
 
 let finalObject2 = Object.assign({}, obj1, {prop5: 5, prop6: 6});
 console.log(finalObject2);
+
+/***********What is DOM and select elements*********** */
+
+/*******DOM
+ * What is DOM?
+ * DOM Selector
+ * Find element byy Id
+ * Find element by Tag Name
+ * Find element By class Name
+ * Find element by css selector
+ * Find element by collection
+ * 
+ * -------title
+*/
+
+
+
+let myIdElement = document.getElementById("my-div");
+let myTagElements = document.getElementsByTagName("p");
+let myClassElements = document.getElementsByClassName("my-apan");
+/***
+ * // we add '#' to id
+// we add '.' to class
+ */
+let MyQuerySelector = document.querySelector("#my-div"); 
+let MyQuerySelector2 = document.querySelector(".my-span");
+let MyQuerySelector3 = document.querySelectorAll(".my-span"); // to focus of all spans element
+console.log(myIdElement);
+console.log(myTagElements[1]);
+
+myTagElements[1].innerHtml = "Test"; // To change the continue of second element of <p></p>
+myClassElements.innerHtml = "Test2";
+MyQuerySelector.innerHTML = "Test3";
+MyQuerySelector2.innerHTML = "test4";
+
+console.log(MyQuerySelector);
+//console.log(MyQuerySelector2);
+
+// print bodies, titles, forms
+
+console.log(`Title is-> ${document.title}`);
+console.log(`body is--> ${document.body}`);
+console.log(`forms is--> ${document.forms[0].one.value}` );
+console.log(document.links[1].href);
