@@ -997,3 +997,34 @@ console.log("a value->");
 console.log(copyObject.a);
 console.log("b value-->");
 console.log(copyObject.b);
+
+
+/************Create object with assign() method ************/
+
+let obj1 = {
+    prop1:1,
+    method1: function()
+    {
+        return this.prop1;
+    },
+};
+
+let obj2 = {
+    prop2: 2,
+    method2: function()
+    {
+        return this.prop2;
+    },
+};
+
+let targetObject = {
+    prop3 : 3,
+    prop4 : 4,
+};
+
+let finalObject = Object.assign(targetObject, obj1);
+console.log(finalObject); // in finalObject we find obj1 and obj2
+
+
+let finalObject2 = Object.assign({}, obj1, {prop5: 5, prop6: 6});
+console.log(finalObject2);
