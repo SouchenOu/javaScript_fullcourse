@@ -1215,3 +1215,32 @@ console.log("********");
 console.log(elem.childNodes[0]);
 console.log("***********");
 console.log(elem.firstChild);
+
+/*******************************DOM events******************* */
+
+/******
+ * DOM[Events]
+ * Use Events on HTML
+ * Use Events On JS
+ * OnClick
+ * oncontextmenu
+ * onmouseenter   // when i put the mouse above the button ,the action will be happen
+ * onmouseleave  // when you put  the mouse in above the button and then leave it , the action will happen
+ * 
+ * 
+ * onload
+ * onscroll // calcule the number of scrolls you did
+ * onresize
+ * 
+ * onfocus
+ * onblur
+ * onsubmit
+ * 
+ * 
+ */
+
+let Mybtn = document.getElementById("LastBTN");
+Mybtn.onclick = function()
+{
+    console.log("clicked");
+}
