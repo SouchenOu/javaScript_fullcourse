@@ -1171,5 +1171,26 @@ console.log("Using getAttribute");
       // To put all of this inside the body element
      document.body.appendChild(Element3);
 
+/**************************DOM [create Elements]****************/
+/****
+ * Practice product with heading And Paragraph
+ * 
+ * 
+ */
+
+
+let MyMainElement = document.createElement("div");
+let myheading = document.createElement("h2");
+let myParagraph = document.createElement("p");
+
+
+let myHeadingTest = document.createTextNode("product Title");
+let myParagraphText = document.createTextNode("product Title");
+
+MyMainElement.className = 'product';
+
+document.body.appendChild(MyMainElement);
+myheading.appendChild(myHeadingTest);
+MyMainElement.appendChild(myParagraphText);
 
 
