@@ -1193,4 +1193,25 @@ document.body.appendChild(MyMainElement);
 myheading.appendChild(myHeadingTest);
 MyMainElement.appendChild(myParagraphText);
 
+/********************DOM [Deal with children*********************] */
 
+/****
+ * children
+ * childNodes
+ * firstChild
+ * LastChild
+ * FirstElementChild
+ * LastElementChild
+ * 
+ */
+
+let elem = document.querySelector("div");
+
+console.log("*****");
+console.log(elem);
+console.log("*******");
+console.log(elem.children[0]);
+console.log("********");
+console.log(elem.childNodes[0]);
+console.log("***********");
+console.log(elem.firstChild);
