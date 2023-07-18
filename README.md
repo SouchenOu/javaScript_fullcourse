@@ -75,5 +75,60 @@
 47.	Array challenge
 
 
+48.Looping on sequences
+49.Nested Loop and Training
+50.Loop control-Break, Continue, Label
+51.Loop for-advanced example
+52.Practice add products to page
+53.Loop while
+54.Loop do - while
+55.Loop challenge
+56.Function intro and basic usage
+57.Function advanced examples
+58.Function return statement & use cases
+59.Function default parameters
+60.Function rest parameters
+61.Function Ultimate Practice
+62.Random arguments Function challenge
+63.Anonymous Function and practice
+64.Return Nested Function
+65.Arrow Function syntax
+66.Scope - Globale and Local
+67.Scope - Block
+68.Scope - Lexical
+69.Arrow Function challenge
+70.Higher order Function map
+71.Higher order Function map practice
+72.Higher order Function fillter
+73.Higher order Function fillter practice
+74.Higher order Function reduce
+75.Higher order Function reduce practice
+76.ForEach and practice
+77.Higher order Function challenge
+78.Object introduction
+79.Dot notation vs Bracket notation
+80.Nested Object and advanced examples
+81.Create object with new keyword
+82.This keyword
+83.Create object with Create method
+84.Create object with assign method
+85.What is DOM ? and select elements
+86.Get, Set elements Content and attributes 
+87.Check attributes and examples
+88.Create and append elements
+89.Product with title & discription practice
+90.Deal with childrens
+91.DOM events
+92.Validate form and prevent default
+93.Event simulation click, focus, blur
+94.Class list object and methods
+95.CSS styling
+96.Before, After, Prepend, Append, Remove
+97.DOM traversing
+98.DOM Cloning
+99.Add EventListener
+100.DOM challenge
+
+
 
 48.	Loop For and concept fo Loop
