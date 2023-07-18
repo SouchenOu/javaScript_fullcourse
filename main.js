@@ -1153,7 +1153,7 @@ console.log("Using getAttribute");
      * 
      */
 
-    /***reate all HTML element by using js */
+    /***create all HTML element by using js */
 
 
     let Element2 = document.createElement("div");
@@ -1223,18 +1223,18 @@ console.log(elem.firstChild);
  * Use Events on HTML
  * Use Events On JS
  * OnClick
- * oncontextmenu
+ * oncontextmenu // change click Droit to something
  * onmouseenter   // when i put the mouse above the button ,the action will be happen
  * onmouseleave  // when you put  the mouse in above the button and then leave it , the action will happen
  * 
  * 
  * onload
- * onscroll // calcule the number of scrolls you did
- * onresize
+ * onscroll // calcule the number px of scrolls you did
+ * onresize // give the number of size window
  * 
- * onfocus
+ * onfocus // when you put a mouse abouve input for example you will remember you about some rule ...
  * onblur
- * onsubmit
+ * onsubmit // when you submit the event will happen
  * 
  * 
  */
@@ -1252,7 +1252,7 @@ Mybtn.onclick = function()
 /*******
  * DOM[events]
  * Validate Form Practise
- * Prevent Default  : to stop when you click a link of something to go to the link
+ * Prevent Default  : to stop when you click a link of something ,to go to the link
  * 
  * 
  */
@@ -1260,3 +1260,34 @@ Mybtn.onclick = function()
 document.links[0].onmouseenter = function() {
     console.log("Hello event");
 }
+
+/*******************Product with totle and Description practice********** */
+
+
+/******
+ * DOM(create Elements)
+ * Practice Product with heading and Paragraph
+ * 
+ * 
+ */
+
+
+let ele1 = document.createElement("div");
+ele1.className = "product";
+let ele2 = document.createElement("h1");
+let ele4 = document.createElement("p");
+let ele3 = document.createTextNode("HALLO ICH BIN SOUCHEN");
+let ele5 = document.createTextNode("This is a paragraph");
+console.log(ele1);
+
+document.body.appendChild(ele1);
+ele1.appendChild(ele2);
+ele1.appendChild(ele4);
+ele2.appendChild(ele3);
+ele4.appendChild(ele5);
+
+
+
+
+
+
