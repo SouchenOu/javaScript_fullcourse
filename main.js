@@ -1324,4 +1324,67 @@ element.style.removeProperty("color");
 
 element.style.setProperty("font-size", "40px");
 
+/****************DOM[Deal with elements] */
 
+/*****
+ * --before [Element || string]
+ * after [Element || string]
+ * append[Element || String]
+ * prepend [Element || String]
+ * remove
+ */
+
+let el1 = document.getElementById("iden")
+el1.before("HELLO FROM JS");
+el1.after("Hello from TS");
+
+
+/***************DOM[Traversing] */
+
+/******
+ * nextSibling //---> next element to specific element
+ * previousSibling // --> the element before the specific element
+ * nextElementSibling
+ * previousElementSibling
+ * parentElement
+ * 
+ * 
+ */
+
+
+let tt1 = document.getElementById("my-div");
+
+console.log("Next element Sibling");
+console.log(tt1.nextElementSibling);
+
+
+
+/**********************Add Event Listenner************ */
+
+
+
+/**To Add two events or more we use addEventListenner */
+
+let myB = document.querySelector("#LastBTN");
+
+myB.onclick = function()
+{
+    console.log("First event");
+}
+
+function FirstFunction()
+{
+    console.log("First function");
+}
+
+function SecondFunction()
+{
+    console.log("Second function");
+}
+
+myB.addEventListener("click", function(){
+    console.log("This is my hero");
+});
+
+myB.addEventListener("click", FirstFunction);
+myB.addEventListener("click", SecondFunction);
