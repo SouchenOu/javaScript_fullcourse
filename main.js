@@ -1287,7 +1287,41 @@ ele2.appendChild(ele3);
 ele4.appendChild(ele5);
 
 
+/*************************Class List object and methods***** */
+
+/*****
+ * DOM[ class List]
+ * classList
+ * Length
+ * contains
+ * item(index)
+ * add
+ * remove
+ * toggle
+ * 
+ * 
+ */
 
 
+
+/**********************DOM[css] **********************/
+
+let element = document.getElementById("iden");
+
+element.style.color = "red";
+element.style.fontWeight = "bold";
+
+// to write all your css style in one line
+
+element.style.cssText = "font-weight: bold; color: green; opacity: 0.9";
+
+
+// To remove a property
+
+element.style.removeProperty("color");
+
+// To add a property with setProperty()
+
+element.style.setProperty("font-size", "40px");
 
 
