@@ -19,6 +19,9 @@
 
 
 
+
+          🌱 BASIC JAVASCRIPT
+
 1.	Introduction And What Is JavaScript ?
 2.	How To Study The Course ?
 3.	Setting up environment and tools
@@ -129,6 +132,8 @@
 99. DOM Cloning
 100. Add EventListener
 101. DOM challenge
+
+          🌱 ADVANCED JAVASCRIPT
 
 
 
